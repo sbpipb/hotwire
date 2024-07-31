@@ -27,6 +27,8 @@ COPY . /app/
 RUN gem install bundler # -v 2.1.4
 RUN bundle install
 
-ENTRYPOINT ["bin/rails"]
-CMD ["s", "-b", "0.0.0.0"]
+
+# ENTRYPOINT ["bin/rails"]
+# CMD ["s", "-b", "0.0.0.0"]
+CMD "bash"
 EXPOSE 3000
